@@ -8,11 +8,7 @@
 </head>
  
 <body>
- <!-- 在正文开头添加网易云音乐插件 -->
-  {% if page.music-id %}
-    {% include cloud-music.html %}
-  {% endif %} 
-  {{ content }}
+
 
 <!-- 顶部锚点 -->
 <a id="htmlup" name="htmlup"></a>
@@ -35,6 +31,12 @@
       </div>
     {% endif %}
   {% endif %}
+
+ <!-- 在正文开头添加网易云音乐插件 -->
+  {% if page.music-id %}
+    {% include cloud-music.html %}
+  {% endif %} 
+  {{ content }}
 
   <!-- 文章内容 -->
   {{ page.content }}
