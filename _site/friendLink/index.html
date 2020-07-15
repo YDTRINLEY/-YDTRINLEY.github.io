@@ -1,6 +1,93 @@
 <!-- 首页及其他页面的布局-Layout -->
 <!DOCTYPE html>
 <html>
+ <!-- 在正文开头添加网易云音乐插件 -->
+   
+  <header id="index-header">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle">YD•Trinley白米饭团</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/">首页</a></li>
+              
+                <li><a href="/tags.html">标签</a></li>
+              
+                <li><a href="https://YDTRINLEY.github.io/categories/">分类</a></li>
+              
+                <li><a href="/timeline.html">时间线</a></li>
+              
+                <li><a href="/about.html">关于博主</a></li>
+              
+                <li><a href="/friendLink.html">友情链接</a></li>
+              
+          </ul>
+
+	<div class="search">
+    <i class="material-icons search-icon search-start">search</i>
+    <input type="text" class="search-input" placeholder="Searching..." />
+    <i class="material-icons search-icon search-clear">clear</i>
+	<div class="search-results"></div>
+</div>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="https://YDTRINLEY.github.io/categories/"><li>分类</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<main>
+    <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">friendLinks</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s">This is my friends.</span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s"></span>
+</div>
+
+    <ul class="ex-list">
+        <li  class="fadeInUp animated">
+          
+            <span class="tag-name" >
+                <a href="https://www.jekyll.com.cn/">「&emsp;jekyll&emsp;」</a>
+            </span>
+                </br>
+          
+        </li>
+    </ul>
+</main>
+<footer id="bottom">
+  <br>
+  <span>游戏人间 ©
+  
+  
+  2020
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+
 <head>
 <!-- 引入head标签 -->
 <meta charset="UTF-8">
@@ -13,6 +100,9 @@
 <link rel="stylesheet" href="/assets/css/animate.min.css">
 <link rel="stylesheet" href="/assets/css/pygments/pygments_friendly.css">
 <link rel="stylesheet" href="/assets/css/github-markdown.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <!-- SNS-icon -->
 <script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
 <!-- share.css -->
@@ -43,6 +133,8 @@ var _hmt = _hmt || [];
 
 
 </head>
+
+
 <body>
 <!-- 页面主体 -->
 <header id="index-header">
@@ -57,6 +149,8 @@ var _hmt = _hmt || [];
               
                 <li><a href="/tags.html">标签</a></li>
               
+                <li><a href="https://YDTRINLEY.github.io/categories/">分类</a></li>
+              
                 <li><a href="/timeline.html">时间线</a></li>
               
                 <li><a href="/about.html">关于博主</a></li>
@@ -64,6 +158,13 @@ var _hmt = _hmt || [];
                 <li><a href="/friendLink.html">友情链接</a></li>
               
           </ul>
+
+	<div class="search">
+    <i class="material-icons search-icon search-start">search</i>
+    <input type="text" class="search-input" placeholder="Searching..." />
+    <i class="material-icons search-icon search-clear">clear</i>
+	<div class="search-results"></div>
+</div>
       </nav>
       <div id="top-boot">
         <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot.png" alt=""></a>
@@ -79,6 +180,8 @@ var _hmt = _hmt || [];
           <a href="/"><li>首页</li></a>
         
           <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="https://YDTRINLEY.github.io/categories/"><li>分类</li></a>
         
           <a href="/timeline.html"><li>时间线</li></a>
         

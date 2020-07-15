@@ -1,7 +1,7 @@
 ---
-music-id:4972477877
-categories:游戏设计&编程
 layout: post
+music-id:'26135471'
+categories: "游戏设计编程"
 title:  "Unity-PlayMaker Note3"
 date:   2020-07-15 14:05:21 +0800
 tags: Unity PlayMaker 

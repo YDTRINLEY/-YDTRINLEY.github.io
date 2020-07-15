@@ -1,4 +1,11 @@
+/**
+ * 网站文章内容搜索功能实现
+ * Copyright (C) 2020 knightyun. <https://github.com/knightyun/knightyun.github.io/assets/js/search.js>
+ * @todo 多关键词搜索
+ */
+
 // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
+var searchBox = document.querySelector('.search');
 var searchBtn = document.querySelector('.search-start');
 var searchClear = document.querySelector('.search-clear');
 var searchInput = document.querySelector('.search-input');
@@ -18,9 +25,11 @@ tmpDiv.className = 'result-item';
 
 // ajax 的兼容写法
 var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+
 xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-        xml = xhr.responseXML;
+        var xml = xhr.responseXML;
+        
         arrItems = xml.getElementsByTagName('item');
         itemLength = arrItems.length;
         
@@ -34,6 +43,9 @@ xhr.onreadystatechange = function () {
             arrTitles[i] = arrItems[i].getElementsByTagName('title')[0].
                 childNodes[0].nodeValue.replace(/<.*?>/g, '');
         }
+
+        // 内容加载完毕后显示搜索框
+        searchBox.style.display = 'block';
     }
 }
 
@@ -137,7 +149,6 @@ function searchMatching(arr1, arr2, input) {
 }
 
 function changeHref(href) {
-
     // 在当前页面点开链接的情况
     location.href = href;
 

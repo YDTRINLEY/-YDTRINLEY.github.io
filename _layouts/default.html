@@ -1,10 +1,18 @@
 <!-- 首页及其他页面的布局-Layout -->
 <!DOCTYPE html>
 <html>
+ <!-- 在正文开头添加网易云音乐插件 -->
+  {% if page.music-id %}
+    {% include cloud-music.html %}
+  {% endif %} 
+  {{ content }}
+
 <head>
 <!-- 引入head标签 -->
 {% include head.html %}
 </head>
+
+
 <body>
 <!-- 页面主体 -->
 {{ content }}
@@ -29,6 +37,6 @@
         document.body.scrollTop = 0;  //非ie
     }
 </script>
-{% include open-embed.html %}
+
 </body>
 </html>
