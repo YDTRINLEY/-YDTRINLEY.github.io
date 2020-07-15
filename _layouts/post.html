@@ -32,16 +32,19 @@
     {% endif %}
   {% endif %}
 
+
+
+  <!-- 文章内容 -->
+  {{ page.content }}
+  <!-- 引入share模块 -->
+  {% include share.html %}
+
  <!-- 在正文开头添加网易云音乐插件 -->
   {% if page.music-id %}
     {% include cloud-music.html %}
   {% endif %} 
   {{ content }}
 
-  <!-- 文章内容 -->
-  {{ page.content }}
-  <!-- 引入share模块 -->
-  {% include share.html %}
 </div>
 
 <!-- 底部锚点 -->
