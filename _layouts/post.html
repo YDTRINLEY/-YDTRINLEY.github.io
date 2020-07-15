@@ -7,11 +7,7 @@
 {% include androidColor.html %}
 </head>
  
-<!-- 在正文开头添加网易云音乐插件 -->
-  {% if page.music-id %}
-    {% include cloud-music.html %}
-  {% endif %} 
-  {{ content }}
+
 
 
 <body>
@@ -46,7 +42,19 @@
   <!-- 引入share模块 -->
   {% include share.html %}
 
-<!--文章尾部添加tags-->
+ 
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+{% include comment.html %}
+<!-- 引入goto模块 -->
+{% include goto.html %}
+<!-- 引入页面底部模块 -->
+{% include footer.html %}
+
+ <!--文章尾部添加tags-->
       {\%\if page.tags.size > 0 \%\}
         <div class="blog-tags">
           Tags:
@@ -75,19 +83,6 @@
 			{\%\endfor \%\}
 		</div>
 	{\%\endif \%\}
- 
-</div>
-
-<!-- 底部锚点 -->
-<a id="htmldown" name="htmldown"></a>
-<!-- 引入评论模块 -->
-{% include comment.html %}
-<!-- 引入goto模块 -->
-{% include goto.html %}
-<!-- 引入页面底部模块 -->
-{% include footer.html %}
-
- 
 
 <!-- 引用wow.js的动画效果 -->
 <script src="/assets/js/wow.js"></script>
