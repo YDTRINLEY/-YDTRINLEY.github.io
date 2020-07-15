@@ -1,0 +1,357 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content=" o(*￣▽￣*)ブ  Drawing, Reading, Thinking, Playing" />
+<meta name="keywords" content="Study & Fun" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_friendly.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>Unity-PlayMaker Note3</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" #525252 ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:#525252;">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">YD•Trinley白米饭团</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Unity-PlayMaker Note3</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:#525252;">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='#525252';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:#525252;"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Unity-PlayMaker Note3</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="javascript:;" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='#525252';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:#525252;"><sapn class="main">没有下一页咯</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid #525252;border-bottom: 2px solid #525252;"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="javascript:;" class="rightchange" style="border-left: 1px solid #525252;border-bottom: 2px solid #525252;"><span><br>没有下一篇咯</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+    
+      <div class="postpage-subtitle" style="border-left: 8px solid #525252; border-right: 8px solid #525252">
+        Ref: Playmaker 101 The Complete Course[Chapter 9]
+      </div>
+    
+  
+
+  <!-- 文章内容 -->
+  <ol>
+  <li>
+    <p><strong>注意：是触发器，一定要勾选“Is Trigger</strong> &lt;font color=#6495ED size=3 &gt;(Ref.:Chapter 9.18 Enemy Weak Spot)&lt;/font&gt; 
+   <img src="https://i.loli.net/2020/04/02/HSxkETG6YMt39py.png" style="zoom:100%;" /></p>
+  </li>
+  <li>
+    <p><strong>Set Is Kinematic：</strong>
+   （1）.Kinematic: It’s a way for us to use as a rigid body, what apply to an object maybe we don’t want to grab to or apply to, like moving a platform or so on.
+   （2）. <a href="http://docs.manew.com/Components/31.html">运动学刚体碰撞体 (Kinematic Rigidbody Collider)</a></p>
+  </li>
+</ol>
+
+<blockquote>
+  <blockquote>
+    <p>A. 此游戏对象 (GameObject) <strong>包含碰撞体 (Collider)</strong> 和标记有“<strong>为运动学”(IsKinematic)</strong> 的刚体 (Rigidbody)。要移动此游戏对象(GameObject)，请修改其变换组件 (Component)，而不是应用力。它们类似于静态碰撞体 (Static Collider)，但是<strong>更适合于要经常四处移动碰撞体 (Collider) 的情况</strong>。有一些使用此游戏对象 (GameObject)的其他专业方案。 此对象<strong>可以用于通常希望静态碰撞体 (Static Collider) 发送触发器 (Trigger)事件</strong>的情况。因为触发器 (Trigger) 必须附加刚体 (Rigidbody)，所以应添加刚体(Rigidbody)，然后启用“为运动学”(IsKinematic)。这可防止对象脱离物理影响，并使您可以在需要时接收触发器(Trigger) 事件。
+B.  运动学刚体 (Kinematic Rigidbody) <strong>可以方便地打开和关闭</strong>。这<strong>适合于在以下情况中创建布娃娃</strong>：通常希望角色跟随在动画之后，然后在发生碰撞时（通过爆炸或所选的任何其他事物进行提示）变为布娃娃。发生这种情况时，只需通过脚本将所有运动学刚体 (Kinematic Rigidbody) 转变为普通刚体 (Rigidbody)。
+C. 如果让刚体 (Rigidbody) 静止下来以便在一段时间内不移动，它们会“入睡”。即，它们在物理更新过程中不会进行计算，因为它们不会前往任何位置。如果将运动学刚体(Kinematic Rigidbody) 从休眠的普通刚体 (Rigidbody) 下边移走，则休眠的刚体 (Rigidbody)将被唤醒并在物理更新中重新准确计算。因此如果您具有许多要四处移动的静态碰撞体 (Static Collider)并且让不同对象正确落到其上，请使用运动学刚体碰撞体 (Kinematic Rigidbody Collider)。</p>
+  </blockquote>
+</blockquote>
+
+<p>（3）. 用以下 “I Tween Stop”停止 itween add运动命令的时候，Ground enemy还是会因为有rigibody 控件而下落，这时候，可以用 “Set is kinematic”来停止rigibody 控件 【<a href="http://jonathan-oduffy.thinkific.com/courses/take/playmaker-101-the-complete-course/lessons/232756-chapter-9-21-pause-scene">Chapter 9.21 Pause Scene</a>】：
+<img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200407210933.png" alt="enter image description here" /></p>
+
+<ol>
+  <li>
+    <p><strong>Character Look Direction 角色朝向: <a href="http://jonathan-oduffy.thinkific.com/courses/take/playmaker-101-the-complete-course/lessons/232730-chapter-9-12-character-look-direction">Chapter 9.12 Character Look Direction</a></strong>
+  （1）.小白色方块 注意取消 Box Collider，因为它不需要有碰撞事件  只是作为朝向面
+  （2）.同时取消 RigidBody，否则测试时候，Cube就很快在运动过程中脱离下方小黄色方块而掉落
+  <img src="https://i.loli.net/2020/04/06/wJmWXzjVNbRlqfs.png" alt="" />
+  <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408153425.png" alt="image-20200407002053401" /></p>
+  </li>
+  <li>
+    <p><strong>I Tween Stop函数：可以停止指定的I Tween命令，通过设置ID（变量）来确定指定哪几个itween 函数停止。</strong>
+ 下面例子，是选择将要停止的Itween add命令，设置他们的ID 为变量id，并在 i tween stop 中引用关联 【<a href="http://jonathan-oduffy.thinkific.com/courses/take/playmaker-101-the-complete-course/lessons/232756-chapter-9-21-pause-scene">Chapter 9.21 Pause Scene</a>】：
+   （1）<img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408152559.png" alt="image-20200407190224601" />
+   （2）<img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200407201352.png" alt="image-20200407195051175" />
+   （3） 在用 set is kinematic 和 itween stop 把会动的物体设置成，当玩家触碰时就不动，即使停在半空中也不动的全局暂停的状态：
+      <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200407220300.png" alt="image-20200407220254091" /></p>
+  </li>
+  <li>
+    <p><strong>Edit Box Collider:</strong>  通过编辑Box Collider 的大小，从而实现hit enemy头部 的时候，不会误碰他身体的死亡点从而停止游戏 【<a href="http://jonathan-oduffy.thinkific.com/courses/take/playmaker-101-the-complete-course/lessons/232766-chapter-9-22-refining-enemy-weak-spot">Chapter 9.22 Refining Enemy Weak Spot</a>】 <br />
+  <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408153853.png" alt="enter image description here" />
+   <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408153904.png" alt="image-20200408153903093" /></p>
+  </li>
+  <li>
+    <p><strong>UGUI system</strong>
+	（1）.打开UGUI 的两种方式
+   	- 方法一：<img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408161208.png" alt="image-20200408161206545" />
+      	- 方法二：<img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163226.png" alt="image-20200408161220063" />
+      	- <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163232.png" alt="image-20200408161551437" />
+         	打开UGUI panel 后会出现 Canvas-Panel 以及EventSystem   	
+            	（2）.<strong>Reference</strong>：区别“<a href="https://blog.csdn.net/sinat_23079759/article/details/52868256">unity 3d中 NGUI和UGUI分别是什么？</a>”
+            	（3）.Canvas-<strong>Panel编辑大小</strong>的时候，注意选择Rect Tool再编辑 
+            	- <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163245.png" alt="enter image description here" />
+               	- <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163256.png" alt="![image-20200408163255364](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163256.png" />
+               	- <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163306.png" alt="image-20200408163305190" /></p>
+  </li>
+  <li>
+    <p><strong>PlayMaker uGui Proxy</strong>：It’s to listen what is the event.	That’s gona be listened, and allow us to pass it from the uGui system and the PlayMaker. It acts as like a middleman.
+	<img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408195834.png" alt="image-20200408195832485" /></p>
+  </li>
+  <li>
+    <p><strong>EventSystem</strong>: Listen for mouse click, for drag and so on.
+    <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408195456.png" alt="image-20200408195455331" />
+    <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408195720.png" alt="image-20200408195719504" /></p>
+  </li>
+  <li><strong>Play Maker U Gui Component</strong>: It allow us to add events in the FSM.(<a href="http://jonathan-oduffy.thinkific.com/courses/take/playmaker-101-the-complete-course/lessons/232760-chapter-9-25-playmaker-button-command">Chapter 9.25 Playmaker Button Command</a>)
+    <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408185153.png" alt="image-Play Maker U Gui Component" />
+    <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408201428.png" alt="image-20200408201425734" /></li>
+  <li>
+    <p>一个可以重新启动关卡的按钮：Drag a proxy, to get it from an event, then add the script onto the button, so that we can listen from click.
+  <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408194626.png" alt="image-20200408194625525" /></p>
+  </li>
+  <li><strong>Creat a win state</strong> <a href="http://jonathan-oduffy.thinkific.com/courses/take/playmaker-101-the-complete-course/lessons/232743-chapter-9-26-loading-next-level-or-main-menu">Chapter 9.26 Loading Next Level or Main Menu</a>
+（1）.  先用UGUI用Load Level Num 命令选择这一关赢了之后触发的下一个关卡
+    <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408210552.png" alt="image-20200408210551612" />
+     （2）.也可以用Load Level，但是选择Load Level Num 可以选关
+     <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408210618.png" alt="image-20200408210616890" />
+     （3）.注意：最后保存scene，然后进入 build Settings中把所有Scenes放入 Scenes in build里面
+     <img src="https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408210917.png" alt="image-20200408210915952" /></li>
+</ol>
+
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>游戏人间 ©
+  
+  
+  2020
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
