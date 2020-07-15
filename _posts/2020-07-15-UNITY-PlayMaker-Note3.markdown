@@ -1,5 +1,6 @@
 ---
 music-id:4972477877
+categories:游戏设计&编程
 layout: post
 title:  "Unity-PlayMaker Note3"
 date:   2020-07-15 14:05:21 +0800
@@ -44,12 +45,12 @@ subtitle: 'Ref: Playmaker 101 The Complete Course[Chapter 9]'
       	- 方法一：![image-20200408161206545](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408161208.png)
               	- 方法二：![image-20200408161220063](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163226.png)
               	- ![image-20200408161551437](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163232.png)
-            	打开UGUI panel 后会出现 Canvas-Panel 以及EventSystem   	
+                    	打开UGUI panel 后会出现 Canvas-Panel 以及EventSystem   	
                	（2）.**Reference**：区别“[unity 3d中 NGUI和UGUI分别是什么？](https://blog.csdn.net/sinat_23079759/article/details/52868256)”
                	（3）.Canvas-**Panel编辑大小**的时候，注意选择Rect Tool再编辑 
                	- ![enter image description here](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163245.png)
-                  	- ![!\[image-20200408163255364\](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163256.png](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163256.png)
-                  	- ![image-20200408163305190](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163306.png)
+                       	- ![!\[image-20200408163255364\](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163256.png](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163256.png)
+                       	- ![image-20200408163305190](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163306.png)
 
 7. **PlayMaker uGui Proxy**：It's to listen what is the event.	That's gona be listened, and allow us to pass it from the uGui system and the PlayMaker. It acts as like a middleman.
    	![image-20200408195832485](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408195834.png)	

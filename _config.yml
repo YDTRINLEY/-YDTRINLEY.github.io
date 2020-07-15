@@ -3,11 +3,14 @@ title: '游戏人间'
 description: ' o(*￣▽￣*)ブ  Drawing, Reading, Thinking, Playing'
 keywords: 'Study & Fun'
 url: 'https://YDTrinley.github.io' # your host
+# 添加category内容
+permalink: /:categories/:title/
 
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   首页: '/'
   标签: '/tags.html'
+  分类: '/categories/html'
   时间线: '/timeline.html'
   关于博主: '/about.html'
   友情链接: '/friendLink.html'
