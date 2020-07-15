@@ -1,4 +1,5 @@
 ---
+music-id:'4972477877'
 layout: post
 title:  "Unity-PlayMaker Note3"
 date:   2020-07-15 14:05:21 +0800
@@ -41,8 +42,8 @@ subtitle: 'Ref: Playmaker 101 The Complete Course[Chapter 9]'
 6. **UGUI system**
    	（1）.打开UGUI 的两种方式
       	- 方法一：![image-20200408161206545](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408161208.png)
-         	- 方法二：![image-20200408161220063](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163226.png)
-         	- ![image-20200408161551437](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163232.png)
+              	- 方法二：![image-20200408161220063](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163226.png)
+              	- ![image-20200408161551437](https://raw.githubusercontent.com/YDTRINLEY/PicGo/master/img/20200408163232.png)
             	打开UGUI panel 后会出现 Canvas-Panel 以及EventSystem   	
                	（2）.**Reference**：区别“[unity 3d中 NGUI和UGUI分别是什么？](https://blog.csdn.net/sinat_23079759/article/details/52868256)”
                	（3）.Canvas-**Panel编辑大小**的时候，注意选择Rect Tool再编辑 
